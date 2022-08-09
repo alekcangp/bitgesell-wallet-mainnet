@@ -1,5 +1,7 @@
 # Bitgesell Wallet Dist for Testnet
 
+<img src="walletbglnode.png">
+
 Based on [epexa/bitgesell-wallet](https://github.com/epexa/bitgesell-wallet)
 
 ## You can run directly from here: https://wallet.bglnode.online
