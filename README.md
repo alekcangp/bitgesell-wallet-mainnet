@@ -1,7 +1,7 @@
-# Bitgesell Wallet Dist
+# Bitgesell Wallet Dist for Testnet
 
-## You can run directly from here: https://app.bglwallet.io
+Based on [epexa/bitgesell-wallet](https://github.com/epexa/bitgesell-wallet)
 
-## Or from here: https://raw.githack.com/epexa/bitgesell-wallet-dist/master/
+## You can run directly from here: https://wallet.bglnode.online
 
-### app.bglwallet.io domain is linked to GitHub Pages. We do not use our server to delivery frontend.
+### wallet.bglnode.online domain is linked to GitHub Pages.
