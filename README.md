@@ -11,3 +11,6 @@ Based on [epexa/bitgesell-wallet](https://github.com/epexa/bitgesell-wallet)
 Testnet wallet seed phrase:
 `foil identify scene strong wool box kick quantum wheel group resource cricket nation insane dolphin switch short method rug cash quick mother chat survey`
 
+or use [bglnode.online](https://bglnode.online) for faucet BGL.
+
+
