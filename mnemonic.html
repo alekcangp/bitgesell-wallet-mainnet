@@ -1,0 +1,35 @@
+<html>
+<head>
+  <style>
+    body, input {
+      background-color: black;
+      color:aqua;
+    }
+    
+  </style>
+<script src='./src/jsbgl.min.js'></script>
+</head>
+<body>
+
+<h3>BGL mnemonic to WIF converter</h3>
+<span>Enter mnemonic phrase and press Enter: </span> <input id = 'mnem' placeholder='24-words mnemonic phrase' onchange='q()'></input> <br>
+<span>Index: </span><input style = 'width:20px' id = 'ind' value='0' onchange='q()'></input>
+<br><br>
+<div id = 'a'></div>
+<div id = 'pk'></div>
+
+<script>
+jsbtc.asyncInit(window);
+async function q() {
+  try {
+m = document.getElementById('mnem').value;
+const wallet = new Wallet({ from: m });
+const address = wallet.getAddress(document.getElementById('ind').value);
+const wif = address.privateKey;
+document.getElementById('a').innerText = 'Address: ' + address.address;
+document.getElementById('pk').innerText = 'WIF: ' + wif;
+  }catch(e) {document.getElementById('pk').innerText = e;}
+}
+</script>
+</body>
+</html>
