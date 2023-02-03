@@ -5,12 +5,29 @@
       background-color: black;
       color:aqua;
     }
-    
+    #square {
+      width: 25px;
+      height: 25px;
+      animation: x-axis-animation 3s ease-in-out 0s infinite;    
+    }
+    #p {
+      width: 25px;
+      height: 25px;
+      perspective: 55px;
+    }
+    h3 {
+      margin-top: -22px;
+      margin-left: 35px;
+    }
+    @keyframes x-axis-animation {
+      from {transform: rotateX(0deg)}
+      to {transform: rotateX(360deg)}
+    }
   </style>
 <script src='jsbgl.min.js'></script>
 </head>
 <body>
-
+<div id = "p"><img  id = "square" src="logo-square-m.png"/></div>
 <h3>BGL wallet mnemonic to WIF converter</h3>
 <span>Enter the mnemonic phrase and press Enter: </span> <input id = 'mnem' placeholder='24-words mnemonic phrase' onchange='q()'></input>&nbsp; <span> Index: </span><input style = 'width:20px' id = 'ind' value='0' onchange='q()'></input>
 <br><br>
