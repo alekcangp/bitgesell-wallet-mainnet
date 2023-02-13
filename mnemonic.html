@@ -1,7 +1,7 @@
 <html>
 <head>
   <style>
-    body, input, a {
+    body, input, textarea, a {
       background-color: black;
       color:aqua;
     }
@@ -29,7 +29,10 @@
 <body>
 <div id = "p"><img  id = "square" src="logo-square-m.png"/></div>
 <h3>BGL wallet mnemonic to WIF converter</h3>
-<span>Enter the mnemonic phrase and press Enter: </span> <input id = 'mnem' placeholder='24-words mnemonic phrase' onchange='q()'></input>&nbsp; <span> Index: </span><input style = 'width:20px' id = 'ind' value='0' onchange='q()'></input>
+<br>
+<textarea style = 'height: 100px; width: 265px;' id = 'mnem' placeholder='24-words mnemonic phrase' onchange='q()'></textarea> <br>
+<br>
+<span>Index: </span><input style = 'width:20px' id = 'ind' value='0' onchange='q()'></input>
 <br><br>
 <div id = 'a'></div>
 <div id = 'pk'></div>
